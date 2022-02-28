@@ -17,6 +17,7 @@ Motivational Mornings is aimed at those who may find it rough to wake up in the 
 5. Enjoy!
 
 ## Work in Progress (WIP)
+- Actual functioning weather (Just mock currently)
 - Motivational Quotes in message
 - Configuration option for quote, joke or both
 - Time configuration (Currently runs everyday at 6am EST)
