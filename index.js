@@ -34,14 +34,18 @@ const generateMessage = () => {
 
     let fullBody; // A variable to hold the full message later
 
-    if (config.message.recieve == 'quote') { //If the user wants to recieve a quote
-        fullBody = baseBody + `Here's a quote for you 📚. ${randomQuote()}`; // Add the quote to the message
-    } else if (config.message.recieve == 'joke') { // If the user wants to recieve a joke
-        fullBody = baseBody + `Here's a joke for you 😂. ${randomJoke()}`; // Add the joke to the message
-    } else if (config.message.recieve == 'both') { // If the user wants to recieve a joke and a quote
-        fullBody = baseBody + `Here's a joke for you 😂. ${randomJoke()} Here's a quote for you 📚. ${randomQuote()}`; // Add the joke and quote to the message
-    } else { // If the user doesn't want to recieve anything (ERROR)
-        fullBody = baseBody + `It seems like you have not set a valid value to recieve jokes or quotes in your "config.js" file. Please check the "config.js" file and try again.`;
+    switch (config.message.recieve) { // Switch statement to determine what message to send
+        case 'quote': // If the user wants to recieve a quote
+            fullBody = baseBody + `Here's a quote for you 📚. ${randomQuote()}`; // Add the quote to the message
+            break;
+        case 'joke': // If the user wants to recieve a joke
+            fullBody = baseBody + `Here's a joke for you 😂. ${randomJoke()}`; // Add the joke to the message
+            break;
+        case 'both': // If the user wants to recieve both a joke and a quote
+            fullBody = baseBody + `Here's a joke for you 😂. ${randomJoke()} Here's a quote for you 📚. ${randomQuote()}`; // Add the joke and quote to the message
+            break;
+        default:
+            break;
     };
 
     return fullBody; // Return the full message to send
