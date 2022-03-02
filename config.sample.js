@@ -16,7 +16,7 @@ module.exports = {
 
     // Message Configuration
     message: {
-        recieve: "quote", // quote, joke, or both
+        recieve: "both", // quote, joke, or both
         weather: true, // true or false
     }
 };
