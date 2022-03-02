@@ -13,15 +13,17 @@ Motivational Mornings is aimed at those who may find it rough to wake up in the 
 1. Download all files and Unzip them.
 2. Ensure you have [Node JS](https://nodejs.dev/)  installed to run the project.
 3. Rename `config.sample.js` to `config.js` and edit it to your liking.
-4. Open a new command prompt and type `node .` to start the process.
-5. Enjoy!
+4. Run `npm install` to install all dependencies.
+5. Open a new command prompt and type `node .` to start the process.
+6. Enjoy!
 
 ## Work in Progress (WIP)
 - Actual functioning weather (Just mock currently)
-- Motivational Quotes in message
-- Configuration option for quote, joke or both
-- Time configuration (Currently runs everyday at 6am EST)
+- ~~Motivational Quotes in message~~
+- ~~Configuration option for quote, joke or both~~
+- ~~Time configuration (Currently runs everyday at 6am EST)~~
 - Web Dashboard/Interface for a public hosted version
+- TypeScript Version
 
 ## Contributing
 If you wish to contribute to Motivational Mornings, please feel free to fork the project and open a Pull Request [here](https://github.com/HypnoticSiege/motivational-mornings/pulls)! 

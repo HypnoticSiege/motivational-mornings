@@ -3,15 +3,20 @@ module.exports = {
     twilio: {
         accountSid: 'YOUR_TWLIO_ACCOUNT_SID',
         authToken: 'YOUR_TWLIO_AUTH_TOKEN',
-        fromNumber: 'PHONE_NUMBER',
+        fromNumber: 'TWILIO_PHONE_NUMBER',
+        toNumber: 'YOUR_PHONE_NUMBER'
     },
 
-    // Open Weather API Configuration https://openweathermap.org/
-    openweather: {
-        apiKey: 'YOUR_OPENWEATHER_API_KEY',
-        lang: 'en',
-        units: 'imperial',
-        city: 'New York City',
-        zip: '10001',
+    // Time to send the message
+    time: {
+        hour: 06,
+        minute: 00,
+        second: 0
     },
+
+    // Message Configuration
+    message: {
+        recieve: "quote", // quote, joke, or both
+        weather: true, // true or false
+    }
 };
