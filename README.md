@@ -25,5 +25,9 @@ Motivational Mornings is aimed at those who may find it rough to wake up in the 
 - Web Dashboard/Interface for a public hosted version
 - TypeScript Version
 
+## Credits
+[JamesFT - JSON Array of Quotes](https://github.com/JamesFT/Database-Quotes-JSON)
+
+
 ## Contributing
 If you wish to contribute to Motivational Mornings, please feel free to fork the project and open a Pull Request [here](https://github.com/HypnoticSiege/motivational-mornings/pulls)! 
