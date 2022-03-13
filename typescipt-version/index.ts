@@ -48,7 +48,7 @@ const sendMessage = () => {
     if (config.twilio.accountSid && config.twilio.authToken && config.twilio.fromNumber) {
         client.messages.create({
             body: generateMessage(),
-            to: '+16098150544',
+            to: config.twilio.toNumber,
             from: config.twilio.fromNumber
         }).then(message => console.log(message.sid));
     } else {
